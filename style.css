@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body {
+    margin: 0;
+    background-color: #8fe3cf83;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+}
+
+.modal {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 30%;
+    bottom: 50%;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit-container, .read-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    max-height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.book-container {
+    display: flex;
+    height: 700px;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    overflow-wrap: break-word;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #256D85;
+    width: 280px;
+    height: 300px;
+    margin-top: 1%;
+    overflow-wrap: break-word;
+    padding: 5px; 
+}
+
+.book p {
+    margin-left: 10px;
+    color: white;
+    overflow-wrap: break-word;
+}
+
+.unread {
+    cursor: pointer;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20%;
+    margin-bottom: 5px;
+}
+
+.nav-bar {
+    min-height: 70px;  
+    background-color: #002B5B;
+    padding: 2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    width: 100%;
+}
+
+#title-head {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.nav-bar .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    align-items: center;
+}
+
+.read- {
+    height: 20px;
+    cursor: pointer;
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20%;
+    margin-bottom: 5px;
+}
+
+.add-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+    width: 90px;
+}
