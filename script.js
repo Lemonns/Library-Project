@@ -8,22 +8,25 @@ let divContainer = document.querySelector('.book-container')
 let indexTracker = 0
 let myLibrary = []
 
-function Book(title, author, pages, is_read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.is_read = is_read
+class Book {
+    constructor(title, author, pages, is_read) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.is_read = is_read
+    }
+
+    isRead() {
+        if (document.querySelector('.read-data').checked) {
+            return true
+        }
+        
+        else {
+            return false
+        }
+    }
 }
 
-Book.prototype.isRead = function() {
-    if (document.querySelector('.read-data').checked) {
-        return true
-    }
-    
-    else {
-        return false
-    }
-}
 
 function addBookToLibrary(title, author, pages, is_read) {
     let newBook = new Book(title, author, pages, is_read)
