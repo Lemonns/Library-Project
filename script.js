@@ -5,7 +5,6 @@ const submitButton = document.querySelector('.submit-btn')
 let deleteButton = document.querySelectorAll('.read-')
 let divContainer = document.querySelector('.book-container')
 
-let indexTracker = 0
 let myLibrary = []
 
 class Book {
